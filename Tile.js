@@ -64,7 +64,7 @@ export class Tile {
 
 
         /*COLLISION CHECK*/
-        if(this.type == "PACMAN")
+        if(this.type == "PACMAN" || this.type == "ANGRYPACMAN")
         {
             pacman.eatPoints(grid[this.newY * DIMENSIONS + this.newX]);
         }
